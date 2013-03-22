@@ -7,6 +7,7 @@
 //
 
 #import "LLAppDelegate.h"
+#import "LLActivityMonitorController.h"
 
 @implementation LLAppDelegate
 
@@ -17,6 +18,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    [[LLActivityMonitorController sharedMonitor] beginMonitor];
 }
 
 // Returns the directory the application uses to store the Core Data store file. This code uses a directory named "com.leafduo.LifeLogger" in the user's Application Support directory.

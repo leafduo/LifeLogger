@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		925BADCA16FC52F600458145 /* LLActivityMonitorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 925BADC916FC52F600458145 /* LLActivityMonitorController.m */; };
+		925BADDA16FC5DDB00458145 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 925BADD516FC5D7C00458145 /* ReactiveCocoa.framework */; };
 		929A127716FC39F000DEBA14 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929A127616FC39F000DEBA14 /* Cocoa.framework */; };
 		929A128116FC39F000DEBA14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 929A127F16FC39F000DEBA14 /* InfoPlist.strings */; };
 		929A128316FC39F000DEBA14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 929A128216FC39F000DEBA14 /* main.m */; };
@@ -17,9 +18,41 @@
 		929A129016FC39F100DEBA14 /* LifeLogger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 929A128E16FC39F100DEBA14 /* LifeLogger.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		925BADD416FC5D7C00458145 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 925BADCC16FC5D7B00458145 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88037F8315056328001A5B19;
+			remoteInfo = ReactiveCocoa;
+		};
+		925BADD616FC5D7C00458145 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 925BADCC16FC5D7B00458145 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88F440AB153DAC820097B4C3;
+			remoteInfo = "ReactiveCocoa-iOS";
+		};
+		925BADD816FC5D7C00458145 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 925BADCC16FC5D7B00458145 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88CDF7DC15000FCF00163A9F;
+			remoteInfo = ReactiveCocoaTests;
+		};
+		925BADDB16FC5E1A00458145 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 925BADCC16FC5D7B00458145 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 88037F8215056328001A5B19;
+			remoteInfo = ReactiveCocoa;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		925BADC816FC52F600458145 /* LLActivityMonitorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLActivityMonitorController.h; sourceTree = "<group>"; };
 		925BADC916FC52F600458145 /* LLActivityMonitorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLActivityMonitorController.m; sourceTree = "<group>"; };
+		925BADCC16FC5D7B00458145 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = Vendor/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
 		929A127316FC39F000DEBA14 /* LifeLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		929A127616FC39F000DEBA14 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		929A127916FC39F000DEBA14 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -41,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				925BADDA16FC5DDB00458145 /* ReactiveCocoa.framework in Frameworks */,
 				929A127716FC39F000DEBA14 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,10 +82,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		925BADCB16FC5D6400458145 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				925BADCC16FC5D7B00458145 /* ReactiveCocoa.xcodeproj */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		925BADCD16FC5D7B00458145 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				925BADD516FC5D7C00458145 /* ReactiveCocoa.framework */,
+				925BADD716FC5D7C00458145 /* libReactiveCocoa-iOS.a */,
+				925BADD916FC5D7C00458145 /* ReactiveCocoaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		929A126A16FC39F000DEBA14 = {
 			isa = PBXGroup;
 			children = (
 				929A127C16FC39F000DEBA14 /* LifeLogger */,
+				925BADCB16FC5D6400458145 /* Vendor */,
 				929A127516FC39F000DEBA14 /* Frameworks */,
 				929A127416FC39F000DEBA14 /* Products */,
 			);
@@ -124,6 +177,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				925BADDC16FC5E1A00458145 /* PBXTargetDependency */,
 			);
 			name = LifeLogger;
 			productName = LifeLogger;
@@ -150,12 +204,42 @@
 			mainGroup = 929A126A16FC39F000DEBA14;
 			productRefGroup = 929A127416FC39F000DEBA14 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 925BADCD16FC5D7B00458145 /* Products */;
+					ProjectRef = 925BADCC16FC5D7B00458145 /* ReactiveCocoa.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				929A127216FC39F000DEBA14 /* LifeLogger */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		925BADD516FC5D7C00458145 /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = 925BADD416FC5D7C00458145 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		925BADD716FC5D7C00458145 /* libReactiveCocoa-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReactiveCocoa-iOS.a";
+			remoteRef = 925BADD616FC5D7C00458145 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		925BADD916FC5D7C00458145 /* ReactiveCocoaTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveCocoaTests.octest;
+			remoteRef = 925BADD816FC5D7C00458145 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		929A127116FC39F000DEBA14 /* Resources */ = {
@@ -183,6 +267,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		925BADDC16FC5E1A00458145 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReactiveCocoa;
+			targetProxy = 925BADDB16FC5E1A00458145 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		929A127F16FC39F000DEBA14 /* InfoPlist.strings */ = {
@@ -277,6 +369,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LifeLogger/LifeLogger-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/include",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "LifeLogger/LifeLogger-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -289,6 +385,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LifeLogger/LifeLogger-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/include",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "LifeLogger/LifeLogger-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

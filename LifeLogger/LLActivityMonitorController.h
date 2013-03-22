@@ -10,6 +10,7 @@
 
 @interface LLActivityMonitorController : NSObject
 
-- (IBAction)printCurrentRunningApplications:(id)sender;
++ (instancetype)sharedMonitor;
+- (void)beginMonitor;
 
 @end
