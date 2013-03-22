@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		925BADCA16FC52F600458145 /* LLActivityMonitorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 925BADC916FC52F600458145 /* LLActivityMonitorController.m */; };
 		929A127716FC39F000DEBA14 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929A127616FC39F000DEBA14 /* Cocoa.framework */; };
 		929A128116FC39F000DEBA14 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 929A127F16FC39F000DEBA14 /* InfoPlist.strings */; };
 		929A128316FC39F000DEBA14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 929A128216FC39F000DEBA14 /* main.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		925BADC816FC52F600458145 /* LLActivityMonitorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLActivityMonitorController.h; sourceTree = "<group>"; };
+		925BADC916FC52F600458145 /* LLActivityMonitorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLActivityMonitorController.m; sourceTree = "<group>"; };
 		929A127316FC39F000DEBA14 /* LifeLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		929A127616FC39F000DEBA14 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		929A127916FC39F000DEBA14 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -87,6 +90,8 @@
 				929A128816FC39F000DEBA14 /* LLAppDelegate.h */,
 				929A128916FC39F100DEBA14 /* LLAppDelegate.m */,
 				929A128B16FC39F100DEBA14 /* MainMenu.xib */,
+				925BADC816FC52F600458145 /* LLActivityMonitorController.h */,
+				925BADC916FC52F600458145 /* LLActivityMonitorController.m */,
 				929A128E16FC39F100DEBA14 /* LifeLogger.xcdatamodeld */,
 				929A127D16FC39F000DEBA14 /* Supporting Files */,
 			);
@@ -173,6 +178,7 @@
 				929A128316FC39F000DEBA14 /* main.m in Sources */,
 				929A128A16FC39F100DEBA14 /* LLAppDelegate.m in Sources */,
 				929A129016FC39F100DEBA14 /* LifeLogger.xcdatamodeld in Sources */,
+				925BADCA16FC52F600458145 /* LLActivityMonitorController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +314,7 @@
 				929A129516FC39F100DEBA14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
